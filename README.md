@@ -1,4 +1,4 @@
-# Analiza navad spanja
+# Vmesno poročilo projekta
 
 Na podlagi podatkov pridobljenih iz mobilne aplikacije [Alarmy](https://play.google.com/store/apps/details?id=droom.sleepIfUCan&hl=en&gl=US), nameravam odkriti, analizirati ter napovedovati lastne navade spanca.
 
