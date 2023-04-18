@@ -1,6 +1,6 @@
-# Vmesno poročilo projekta
+# Analiza navad spanja
 
-Na podlagi podatkov pridobljenih iz mobilne aplikacije [Alarmy](https://play.google.com/store/apps/details?id=droom.sleepIfUCan&hl=en&gl=US), nameravam odkriti, analizirati ter napovedovati lastne navade spanca.
+Na podlagi podatkov pridobljenih iz mobilne aplikacije [Alarmy](https://play.google.com/store/apps/etails?id=droom.sleepIfUCan&hl=en&gl=US), nameravam odkriti, analizirati ter napovedovati lastne navade spanca.
 
 
 
@@ -10,29 +10,15 @@ Med prvim koronskim lockdownom sem si zaradi vedno slabšega spanca naložil apl
 
 
 
-## Cilji in vprašanja
+## Pridobivanje podatkov
 
-Nekaj vprašanj na katera nameravam odgovoriti v projektu so:
-
-- Kako se moje navade spanca razvijajo s časom
-- Kaj najbolj vpliva na moj spanec (obveznosti, letni časi, stres, ...)
-- Koliko časa potrebujem, da se prebudim
-- Lahko za določeno obdobje napovem svoje navade spanca
-- So moje navade spanca relativno običajne
-- ...
-
-
-
-## Vir in oblika podatkov
-
-Podatki so v [aplikaciji](https://play.google.com/store/apps/details?id=droom.sleepIfUCan&hl=en&gl=US) shranjeni v obliki preprostega menija. Screenshotal sem vse [podmenije](https://github.com/MitxSte/PR23MS/tree/main/podatki/screens) (določeni z letom in mesecem) in pridobljene slike preimenoval v pravilni vrstni red. Prvi podatki so bili zabeleženi 26. marca 2020, zato nameravam kot zadnji vir uporabiti podatke 26. marca 2023.
+Podatki so v [aplikaciji](https://play.google.com/store/apps/details?id=droom.sleepIfUCan&hl=en&gl=US) shranjeni v obliki preprostega menija. Screenshotal sem vse [podmenije](https://github.com/MitxSte/PR23MS/tree/main/podatki/screens) (določeni z letom in mesecem) in pridobljene slike preimenoval v pravilni vrstni red. Prvi podatki so bili zabeleženi 26. marca 2020.
 
 Primer screenshota:
 
 ![Podatki za marec 2020](https://github.com/MitxSte/PR23MS/blob/main/podatki/downsized/rsz_121.jpg "Podatki za marec 2020")
 
 
+### Pretvorba podatkov
 
-## Dodatne možnosti
-
-Ker imam žal le podatke o prebujanju in ne tudi o začetku spanca, bo nemogoče analizirati npr. količino spanja in podobne koristne informacije. Potrebne (a nepopolne) podatke bi pa za to lahko pridobil iz spletne aplikacije [Last.fm](https://www.last.fm/home), s katero sem septembra 2022 začel beležiti poslušano glasbo. Predvidevam, da bi lahko npr. ura zadnje poslušane glasbe napovedovala približen čas, kdaj se zbudim naslednji dan.
+Sledila je pretvorba zaslonskih skik v uporabne podatke. Za to sem uporabil python knjižnice cv2, pytesseract in PIL. Z napisano [skripto](https://github.com/MitxSte/PR23MS/blob/main/scripts/branjeSlik.py) sem prebrane podatke filtriral, veljavne vnose pa zapisal v ločeno [datoteko](https://github.com/MitxSte/PR23MS/blob/main/podatki/test.txt).
