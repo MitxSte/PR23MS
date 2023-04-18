@@ -24,3 +24,20 @@ Primer screenshota:
 Sledila je pretvorba zaslonskih skik v uporabne podatke. Za to sem uporabil python knjižnice cv2, pytesseract in PIL. Z napisano [skripto](https://github.com/MitxSte/PR23MS/blob/main/scripts/branjeSlik.py) sem prebrane podatke filtriral, veljavne vnose pa zapisal v ločeno [datoteko](https://github.com/MitxSte/PR23MS/blob/main/podatki/test.txt).
 
 Ugotovil sem, da sem od 26. marca 2020 do 31. januarja 2023 (1042 dni) ugasnil kar 3812 budilk, pri branju slik pa je do napak prišlo pri 82, torej jih lahko za analizo uporabim 3730. Ker sem torej za prebujanje uporabil v povprečju 3.57 budilk na dan, bom za številne analize upošteval le zadnje ugašnjene budilke dneva (recimo da je prva budilka zvonila ob 6:30, druga ob 6:45, tretja pa 7:00 - seveda bom za analizo prebujanja upošteval le budilko ob 7:00, saj so očitno bile prvi dve v nalogi prebujanja neuspešne). Za analizo tovrstnih navad, za katere bo potrebno Upoštevati le zadnjo budilko dneva, je za analizo ostalo 893 le teh. Seveda pa bom lahko za ugotavljanje številnih navad uporabil tudi ostale budilke, npr. koliko časa potrebujem za prebujanje (čas od prve budilke do zadnje).
+
+
+## Dosedanje ugotovitve in analize
+
+Za lažjo predstavo podatkov sem le te najprej vizualiziral s številnimi grafi.
+
+### Graf vseh zadnjih dnevnih budilk
+
+![Graf vseh zadnjih dnevnih budilk](https://github.com/MitxSte/PR23MS/blob/main/slike_prikaz/vsi%20podatki.PNG "Graf vseh zadnjih dnevnih budilk")
+
+### Graf vseh budilk ob pričetku šolskega leta 2020/21
+V grafu se zelo očitno razbere pričetek novega šolskega leta z navad prebujanja, prav tako se lepo razloči vikende.
+![Graf vseh budilk ob pričetku šolskega leta 2020/21](https://github.com/MitxSte/PR23MS/blob/main/slike_prikaz/2020_konec_poletja.PNG "Graf vseh budilk ob pričetku šolskega leta 2020/21")
+
+
+## Analiza povprečnih mesečnih časov prebujanj
+
