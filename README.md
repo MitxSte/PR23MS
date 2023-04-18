@@ -64,7 +64,7 @@ November: 09:35
 December: 10:30
 ```
 
-Pričakoval sem, da bodo povprečja "šolskih" mesecev precej nižja, po hitrem pomisleku pa so rezultati zelo smiselni. Od marca 2020 (pričetka beleženja poodatkov) smo namreč šolanje v srednji šoli opravili večinoma na daljavo, na faksu pa je bilo zgodnje prebujanje redko potrebno zahvaljujoč fleksibilnim urnikov. Za podatke beležene po srednji šoli se je namreč zgodilo ravno obratno od pričakovanega, povprečno prebujanje med poletjem je bilo opazno bolj pozno zaradi službe.
+Pričakoval sem, da bodo povprečja "šolskih" mesecev precej nižja, po hitrem pomisleku pa so rezultati zelo smiselni. Od marca 2020 (pričetka beleženja poodatkov) smo namreč šolanje v srednji šoli opravili večinoma na daljavo, na faksu pa je bilo zgodnje prebujanje redko potrebno zahvaljujoč fleksibilnim urnikov. Za podatke beležene po srednji šoli se je namreč zgodilo ravno obratno od pričakovanega, povprečno prebujanje med poletjem je bilo opazno bolj zgodnje zaradi službe.
 
 ## Nadaljevanje
 V nadaljevanju nameravam podatke dodatno opredeliti (letni časi, stresna obdobja (izpiti, matura, ...),...), ter na njih izvedeti številne zanimive analize.
