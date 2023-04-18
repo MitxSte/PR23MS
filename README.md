@@ -35,7 +35,9 @@ Za lažjo predstavo podatkov sem le te najprej vizualiziral s številnimi grafi.
 ![Graf vseh zadnjih dnevnih budilk](https://github.com/MitxSte/PR23MS/blob/main/slike_prikaz/vsi%20podatki.PNG "Graf vseh zadnjih dnevnih budilk")
 
 ### Graf vseh budilk ob pričetku šolskega leta 2020/21
+
 V grafu se zelo očitno razbere pričetek novega šolskega leta z navad prebujanja, prav tako se lepo razloči vikende.
+
 ![Graf vseh budilk ob pričetku šolskega leta 2020/21](https://github.com/MitxSte/PR23MS/blob/main/slike_prikaz/2020_konec_poletja.PNG "Graf vseh budilk ob pričetku šolskega leta 2020/21")
 
 
