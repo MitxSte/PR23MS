@@ -12,7 +12,7 @@ Med prvim koronskim lockdownom sem si zaradi vedno slabšega spanca naložil apl
 
 ## Pridobivanje podatkov
 
-Podatki so v [aplikaciji](https://play.google.com/store/apps/details?id=droom.sleepIfUCan&hl=en&gl=US) shranjeni v obliki preprostega menija. Screenshotal sem vse [podmenije](https://github.com/MitxSte/PR23MS/tree/main/podatki/screens) (določeni z letom in mesecem) in pridobljene slike preimenoval v pravilni vrstni red. Prvi podatki so bili zabeleženi 26. marca 2020.
+Podatki so v [aplikaciji](https://play.google.com/store/apps/details?id=droom.sleepIfUCan&hl=en&gl=US) shranjeni v obliki preprostega menija. Screenshotal sem vse [podmenije](https://github.com/MitxSte/PR23MS/tree/main/podatki/screens) (določeni z letom in mesecem) in pridobljene slike preimenoval v pravilni vrstni red. Prvi podatki so bili zabeleženi 26. marca 2020, zadnji upoštevani podatki pa 31. januarja 2023.
 
 Primer screenshota:
 
@@ -22,3 +22,5 @@ Primer screenshota:
 ### Pretvorba podatkov
 
 Sledila je pretvorba zaslonskih skik v uporabne podatke. Za to sem uporabil python knjižnice cv2, pytesseract in PIL. Z napisano [skripto](https://github.com/MitxSte/PR23MS/blob/main/scripts/branjeSlik.py) sem prebrane podatke filtriral, veljavne vnose pa zapisal v ločeno [datoteko](https://github.com/MitxSte/PR23MS/blob/main/podatki/test.txt).
+
+Ugotovil sem, da sem od 26. marca 2020 do 31. januarja 2023 (1042 dni) ugasnil kar 3812 budilk, pri branju slik pa je do napak prišlo pri 82 budilkah, torej lahko za analizo uporabim 3730 budilk. Ker sem torej za prebujanje uporabil v povprečju 3.57 na dan, bom za številne analize upošteval le zadnje ugašnjene budilke dneva (recimo da je prva budilka zvonila ob recimo 6:30, druga ob 6:45, tretja pa 7:00 - seveda bom za analizo prebujanja upošteval le budilko ob 7:00, saj so očitno bile prvi dve v nalogi prebujanja neuspešne). 
